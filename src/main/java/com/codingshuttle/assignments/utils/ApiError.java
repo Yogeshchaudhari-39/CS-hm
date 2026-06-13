@@ -1,9 +1,8 @@
-package com.codingshuttle.assignments.advices;
+package com.codingshuttle.assignments.utils;
 
 import lombok.Builder;
 import lombok.Data;
 import org.springframework.http.HttpStatus;
-import org.w3c.dom.stylesheets.LinkStyle;
 
 import java.util.List;
 
@@ -11,7 +10,11 @@ import java.util.List;
 @Builder
 public class ApiError {
 
-    private HttpStatus httpStatus;
     private String massage;
-    private List<String> subErrors;
+
+    private HttpStatus httpStatus;
+
+    List<String> subErrors;
+
+
 }
